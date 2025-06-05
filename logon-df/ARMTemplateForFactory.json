@@ -89,6 +89,22 @@
 									"tableName": {
 										"value": "@pipeline().parameters.tableName",
 										"type": "Expression"
+									},
+									"serverName": {
+										"value": "@pipeline().parameters.serverName",
+										"type": "Expression"
+									},
+									"dbName": {
+										"value": "@pipeline().parameters.dbName",
+										"type": "Expression"
+									},
+									"userName": {
+										"value": "@pipeline().parameters.userName",
+										"type": "Expression"
+									},
+									"password": {
+										"value": "@pipeline().parameters.password",
+										"type": "Expression"
 									}
 								}
 							}
@@ -110,6 +126,18 @@
 						"type": "string"
 					},
 					"tableName": {
+						"type": "string"
+					},
+					"serverName": {
+						"type": "string"
+					},
+					"dbName": {
+						"type": "string"
+					},
+					"userName": {
+						"type": "string"
+					},
+					"password": {
 						"type": "string"
 					}
 				},
@@ -154,13 +182,43 @@
 			"properties": {
 				"linkedServiceName": {
 					"referenceName": "source_ls",
-					"type": "LinkedServiceReference"
+					"type": "LinkedServiceReference",
+					"parameters": {
+						"serverName": {
+							"value": "@dataset().serverName",
+							"type": "Expression"
+						},
+						"dbName": {
+							"value": "@dataset().dbName",
+							"type": "Expression"
+						},
+						"userNmae": {
+							"value": "@dataset().userName",
+							"type": "Expression"
+						},
+						"password": {
+							"value": "@dataset().password",
+							"type": "Expression"
+						}
+					}
 				},
 				"parameters": {
 					"schemaName": {
 						"type": "string"
 					},
 					"tableName": {
+						"type": "string"
+					},
+					"serverName": {
+						"type": "string"
+					},
+					"dbName": {
+						"type": "string"
+					},
+					"userName": {
+						"type": "string"
+					},
+					"password": {
 						"type": "string"
 					}
 				},
