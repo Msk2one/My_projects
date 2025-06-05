@@ -53,6 +53,22 @@
 							"tableName": {
 								"value": "@pipeline().parameters.tableName",
 								"type": "Expression"
+							},
+							"serverName": {
+								"value": "@pipeline().parameters.serverName",
+								"type": "Expression"
+							},
+							"dbName": {
+								"value": "@pipeline().parameters.dbName",
+								"type": "Expression"
+							},
+							"userName": {
+								"value": "@pipeline().parameters.userName",
+								"type": "Expression"
+							},
+							"password": {
+								"value": "@pipeline().parameters.password",
+								"type": "Expression"
 							}
 						}
 					}
@@ -70,6 +86,18 @@
 				"type": "string"
 			},
 			"tableName": {
+				"type": "string"
+			},
+			"serverName": {
+				"type": "string"
+			},
+			"dbName": {
+				"type": "string"
+			},
+			"userName": {
+				"type": "string"
+			},
+			"password": {
 				"type": "string"
 			}
 		},
