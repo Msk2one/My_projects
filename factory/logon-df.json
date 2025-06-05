@@ -1,0 +1,9 @@
+{
+	"name": "logon-df",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "bb05a851-50de-4d6f-bf6d-8a7d672acb13",
+		"tenantId": "c66d648f-3afe-4403-88da-f2ca73229595"
+	}
+}
