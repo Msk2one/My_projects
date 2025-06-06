@@ -11,6 +11,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'sink_ls'"
 		},
+		"source_ls_1_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'source_ls_1'"
+		},
 		"sink_ls_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://logonstorageac.dfs.core.windows.net/"
@@ -26,6 +30,14 @@
 		"source_ls_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "@{linkedService().userNmae}"
+		},
+		"new csv file to json_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/81832be2-97b9-46c7-bf8d-6d2daec9fdd5/resourceGroups/msk_rg/providers/Microsoft.Storage/storageAccounts/logonstorageac"
+		},
+		"trigger1_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/81832be2-97b9-46c7-bf8d-6d2daec9fdd5/resourceGroups/msk_rg/providers/Microsoft.Storage/storageAccounts/logonstorageac"
 		},
 		"containerUri": {
 			"type": "string",
@@ -57,6 +69,9 @@
 					"sink_ls_accountKey": {
 						"value": "[parameters('sink_ls_accountKey')]"
 					},
+					"source_ls_1_connectionString": {
+						"value": "[parameters('source_ls_1_connectionString')]"
+					},
 					"sink_ls_properties_typeProperties_url": {
 						"value": "[parameters('sink_ls_properties_typeProperties_url')]"
 					},
@@ -68,6 +83,12 @@
 					},
 					"source_ls_properties_typeProperties_userName": {
 						"value": "[parameters('source_ls_properties_typeProperties_userName')]"
+					},
+					"new csv file to json_properties_typeProperties_scope": {
+						"value": "[parameters('new csv file to json_properties_typeProperties_scope')]"
+					},
+					"trigger1_properties_typeProperties_scope": {
+						"value": "[parameters('trigger1_properties_typeProperties_scope')]"
 					}
 				}
 			},
