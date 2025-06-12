@@ -5,11 +5,41 @@
 		"factoryName": {
 			"value": "logon-df"
 		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage2_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage3_accountKey": {
+			"value": ""
+		},
+		"incr_ls_accountKey": {
+			"value": ""
+		},
 		"sink_ls_accountKey": {
 			"value": ""
 		},
 		"source_ls_1_connectionString": {
 			"value": ""
+		},
+		"source_ls_new_connectionString": {
+			"value": ""
+		},
+		"src_ds_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://logonstorageac.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage2_properties_typeProperties_url": {
+			"value": "https://logonstorageac.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage3_properties_typeProperties_url": {
+			"value": "https://logonstorageac.dfs.core.windows.net/"
+		},
+		"incr_ls_properties_typeProperties_url": {
+			"value": "https://logonstorageac.dfs.core.windows.net/"
 		},
 		"sink_ls_properties_typeProperties_url": {
 			"value": "https://logonstorageac.dfs.core.windows.net/"
@@ -23,11 +53,8 @@
 		"source_ls_properties_typeProperties_userName": {
 			"value": "@{linkedService().userNmae}"
 		},
-		"new csv file to json_properties_typeProperties_scope": {
-			"value": "/subscriptions/81832be2-97b9-46c7-bf8d-6d2daec9fdd5/resourceGroups/msk_rg/providers/Microsoft.Storage/storageAccounts/logonstorageac"
-		},
-		"trigger1_properties_typeProperties_scope": {
-			"value": "/subscriptions/81832be2-97b9-46c7-bf8d-6d2daec9fdd5/resourceGroups/msk_rg/providers/Microsoft.Storage/storageAccounts/logonstorageac"
+		"src_ds_properties_typeProperties_url": {
+			"value": "https://logonstorageac.dfs.core.windows.net/"
 		}
 	}
 }

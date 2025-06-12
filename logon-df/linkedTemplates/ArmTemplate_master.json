@@ -7,6 +7,22 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "logon-df"
 		},
+		"AzureDataLakeStorage1_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
+		},
+		"AzureDataLakeStorage2_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage2'"
+		},
+		"AzureDataLakeStorage3_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage3'"
+		},
+		"incr_ls_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'incr_ls'"
+		},
 		"sink_ls_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'sink_ls'"
@@ -14,6 +30,30 @@
 		"source_ls_1_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'source_ls_1'"
+		},
+		"source_ls_new_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'source_ls_new'"
+		},
+		"src_ds_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'src_ds'"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://logonstorageac.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage2_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://logonstorageac.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage3_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://logonstorageac.dfs.core.windows.net/"
+		},
+		"incr_ls_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://logonstorageac.dfs.core.windows.net/"
 		},
 		"sink_ls_properties_typeProperties_url": {
 			"type": "string",
@@ -31,13 +71,9 @@
 			"type": "string",
 			"defaultValue": "@{linkedService().userNmae}"
 		},
-		"new csv file to json_properties_typeProperties_scope": {
+		"src_ds_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "/subscriptions/81832be2-97b9-46c7-bf8d-6d2daec9fdd5/resourceGroups/msk_rg/providers/Microsoft.Storage/storageAccounts/logonstorageac"
-		},
-		"trigger1_properties_typeProperties_scope": {
-			"type": "string",
-			"defaultValue": "/subscriptions/81832be2-97b9-46c7-bf8d-6d2daec9fdd5/resourceGroups/msk_rg/providers/Microsoft.Storage/storageAccounts/logonstorageac"
+			"defaultValue": "https://logonstorageac.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"type": "string",
@@ -66,11 +102,41 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"AzureDataLakeStorage1_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
+					},
+					"AzureDataLakeStorage2_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage2_accountKey')]"
+					},
+					"AzureDataLakeStorage3_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage3_accountKey')]"
+					},
+					"incr_ls_accountKey": {
+						"value": "[parameters('incr_ls_accountKey')]"
+					},
 					"sink_ls_accountKey": {
 						"value": "[parameters('sink_ls_accountKey')]"
 					},
 					"source_ls_1_connectionString": {
 						"value": "[parameters('source_ls_1_connectionString')]"
+					},
+					"source_ls_new_connectionString": {
+						"value": "[parameters('source_ls_new_connectionString')]"
+					},
+					"src_ds_accountKey": {
+						"value": "[parameters('src_ds_accountKey')]"
+					},
+					"AzureDataLakeStorage1_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage2_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage2_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage3_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage3_properties_typeProperties_url')]"
+					},
+					"incr_ls_properties_typeProperties_url": {
+						"value": "[parameters('incr_ls_properties_typeProperties_url')]"
 					},
 					"sink_ls_properties_typeProperties_url": {
 						"value": "[parameters('sink_ls_properties_typeProperties_url')]"
@@ -84,11 +150,8 @@
 					"source_ls_properties_typeProperties_userName": {
 						"value": "[parameters('source_ls_properties_typeProperties_userName')]"
 					},
-					"new csv file to json_properties_typeProperties_scope": {
-						"value": "[parameters('new csv file to json_properties_typeProperties_scope')]"
-					},
-					"trigger1_properties_typeProperties_scope": {
-						"value": "[parameters('trigger1_properties_typeProperties_scope')]"
+					"src_ds_properties_typeProperties_url": {
+						"value": "[parameters('src_ds_properties_typeProperties_url')]"
 					}
 				}
 			},
