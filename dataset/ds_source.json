@@ -5,20 +5,12 @@
 			"referenceName": "source_ls_new",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"fileName": {
-				"type": "string"
-			}
-		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": {
-					"value": "@dataset().fileName",
-					"type": "Expression"
-				},
+				"fileName": "Fact_Sales_1.csv",
 				"container": "input"
 			},
 			"columnDelimiter": ",",
