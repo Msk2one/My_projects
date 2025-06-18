@@ -7,105 +7,9 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "logon-df"
 		},
-		"AzureDataLakeStorage1_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
-		},
-		"AzureDataLakeStorage2_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage2'"
-		},
-		"AzureDataLakeStorage3_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage3'"
-		},
-		"AzureSqlDatabase1_password": {
-			"type": "secureString",
-			"metadata": "Secure string for 'password' of 'AzureSqlDatabase1'"
-		},
-		"cond_sink_ds_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'cond_sink_ds'"
-		},
-		"dataflow_ls_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'dataflow_ls'"
-		},
-		"incr_ls_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'incr_ls'"
-		},
-		"sink_ls_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'sink_ls'"
-		},
-		"source_ls_1_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'source_ls_1'"
-		},
 		"source_ls_new_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'source_ls_new'"
-		},
-		"src_ds_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'src_ds'"
-		},
-		"AzureDataLakeStorage1_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://logonstorageac.dfs.core.windows.net/"
-		},
-		"AzureDataLakeStorage2_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://logonstorageac.dfs.core.windows.net/"
-		},
-		"AzureDataLakeStorage3_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://logonstorageac.dfs.core.windows.net/"
-		},
-		"AzureSqlDatabase1_properties_typeProperties_server": {
-			"type": "string",
-			"defaultValue": "msk18.database.windows.net"
-		},
-		"AzureSqlDatabase1_properties_typeProperties_database": {
-			"type": "string",
-			"defaultValue": "msk_db"
-		},
-		"AzureSqlDatabase1_properties_typeProperties_userName": {
-			"type": "string",
-			"defaultValue": "msk125"
-		},
-		"cond_sink_ds_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://logonstorageac.dfs.core.windows.net/"
-		},
-		"dataflow_ls_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://logonstorageac.dfs.core.windows.net/"
-		},
-		"incr_ls_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://logonstorageac.dfs.core.windows.net/"
-		},
-		"sink_ls_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://logonstorageac.dfs.core.windows.net/"
-		},
-		"source_ls_properties_typeProperties_server": {
-			"type": "string",
-			"defaultValue": "@{linkedService().serverName}"
-		},
-		"source_ls_properties_typeProperties_database": {
-			"type": "string",
-			"defaultValue": "@{linkedService().dbName}"
-		},
-		"source_ls_properties_typeProperties_userName": {
-			"type": "string",
-			"defaultValue": "@{linkedService().userNmae}"
-		},
-		"src_ds_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://logonstorageac.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"type": "string",
@@ -134,104 +38,12 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"AzureDataLakeStorage1_accountKey": {
-						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
-					},
-					"AzureDataLakeStorage2_accountKey": {
-						"value": "[parameters('AzureDataLakeStorage2_accountKey')]"
-					},
-					"AzureDataLakeStorage3_accountKey": {
-						"value": "[parameters('AzureDataLakeStorage3_accountKey')]"
-					},
-					"AzureSqlDatabase1_password": {
-						"value": "[parameters('AzureSqlDatabase1_password')]"
-					},
-					"cond_sink_ds_accountKey": {
-						"value": "[parameters('cond_sink_ds_accountKey')]"
-					},
-					"dataflow_ls_accountKey": {
-						"value": "[parameters('dataflow_ls_accountKey')]"
-					},
-					"incr_ls_accountKey": {
-						"value": "[parameters('incr_ls_accountKey')]"
-					},
-					"sink_ls_accountKey": {
-						"value": "[parameters('sink_ls_accountKey')]"
-					},
-					"source_ls_1_connectionString": {
-						"value": "[parameters('source_ls_1_connectionString')]"
-					},
 					"source_ls_new_connectionString": {
 						"value": "[parameters('source_ls_new_connectionString')]"
-					},
-					"src_ds_accountKey": {
-						"value": "[parameters('src_ds_accountKey')]"
-					},
-					"AzureDataLakeStorage1_properties_typeProperties_url": {
-						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
-					},
-					"AzureDataLakeStorage2_properties_typeProperties_url": {
-						"value": "[parameters('AzureDataLakeStorage2_properties_typeProperties_url')]"
-					},
-					"AzureDataLakeStorage3_properties_typeProperties_url": {
-						"value": "[parameters('AzureDataLakeStorage3_properties_typeProperties_url')]"
-					},
-					"AzureSqlDatabase1_properties_typeProperties_server": {
-						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_server')]"
-					},
-					"AzureSqlDatabase1_properties_typeProperties_database": {
-						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_database')]"
-					},
-					"AzureSqlDatabase1_properties_typeProperties_userName": {
-						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_userName')]"
-					},
-					"cond_sink_ds_properties_typeProperties_url": {
-						"value": "[parameters('cond_sink_ds_properties_typeProperties_url')]"
-					},
-					"dataflow_ls_properties_typeProperties_url": {
-						"value": "[parameters('dataflow_ls_properties_typeProperties_url')]"
-					},
-					"incr_ls_properties_typeProperties_url": {
-						"value": "[parameters('incr_ls_properties_typeProperties_url')]"
-					},
-					"sink_ls_properties_typeProperties_url": {
-						"value": "[parameters('sink_ls_properties_typeProperties_url')]"
-					},
-					"source_ls_properties_typeProperties_server": {
-						"value": "[parameters('source_ls_properties_typeProperties_server')]"
-					},
-					"source_ls_properties_typeProperties_database": {
-						"value": "[parameters('source_ls_properties_typeProperties_database')]"
-					},
-					"source_ls_properties_typeProperties_userName": {
-						"value": "[parameters('source_ls_properties_typeProperties_userName')]"
-					},
-					"src_ds_properties_typeProperties_url": {
-						"value": "[parameters('src_ds_properties_typeProperties_url')]"
 					}
 				}
 			},
 			"dependsOn": []
-		},
-		{
-			"name": "logon-df_ArmTemplate_1",
-			"type": "Microsoft.Resources/deployments",
-			"apiVersion": "2024-03-01",
-			"properties": {
-				"mode": "incremental",
-				"templateLink": {
-					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
-					"contentVersion": "1.0.0.0"
-				},
-				"parameters": {
-					"factoryName": {
-						"value": "[parameters('factoryName')]"
-					}
-				}
-			},
-			"dependsOn": [
-				"[resourceId('Microsoft.Resources/deployments', 'logon-df_ArmTemplate_0')]"
-			]
 		}
 	]
 }
