@@ -14,6 +14,15 @@
 		"AzureDataLakeStorage3_accountKey": {
 			"value": ""
 		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"cond_sink_ds_accountKey": {
+			"value": ""
+		},
+		"dataflow_ls_accountKey": {
+			"value": ""
+		},
 		"incr_ls_accountKey": {
 			"value": ""
 		},
@@ -36,6 +45,21 @@
 			"value": "https://logonstorageac.dfs.core.windows.net/"
 		},
 		"AzureDataLakeStorage3_properties_typeProperties_url": {
+			"value": "https://logonstorageac.dfs.core.windows.net/"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "msk18.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "msk_db"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "msk125"
+		},
+		"cond_sink_ds_properties_typeProperties_url": {
+			"value": "https://logonstorageac.dfs.core.windows.net/"
+		},
+		"dataflow_ls_properties_typeProperties_url": {
 			"value": "https://logonstorageac.dfs.core.windows.net/"
 		},
 		"incr_ls_properties_typeProperties_url": {
