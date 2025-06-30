@@ -1,0 +1,9 @@
+{
+	"name": "don-logon-df",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "fd9ae717-9892-4711-a047-36ed033135dc",
+		"tenantId": "78058eef-bb5e-4a92-b9a9-299f7b5762f3"
+	}
+}
